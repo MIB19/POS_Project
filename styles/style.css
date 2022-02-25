@@ -1,0 +1,239 @@
+::placeholder {
+  text-align: left;
+}
+.tols_tips {
+  position: relative;
+  display: inline-block;
+  width:100%;
+  border-bottom: 1px dotted black;
+}
+
+.tols_tips .tols_tipsa {
+  visibility: hidden;
+  width: 210px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tols_tips .tols_tipsa::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tols_tips:hover .tols_tipsa {
+  visibility: visible;
+  opacity: 1;
+}
+.form_input{
+	width: 100%;
+	height: auto;
+	padding: 8px 20px;
+	margin: 0px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	line-height:normal;
+}
+.form_inputs{
+	width: 50%;
+	height: auto;
+	padding: 8px 20px;
+	margin-bottom: 10px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	line-height:normal;
+}
+.form_inputss{
+	width: 20%;
+	height: auto;
+	padding: 8px 20px;
+	margin-bottom: 10px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	line-height:normal;
+}
+.form_pbyrn{
+	width: 10%;
+	height: auto;
+	padding: 8px 20px;
+	margin-bottom: 10px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	line-height:normal;
+}
+.card_table {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 95%;
+	border-radius: 15px;
+	float: left;
+	color:#000000;
+	height:auto;
+	background:#ffffff;
+	margin-bottom:15px;
+	margin-top:15px;
+	font-weight: bold;
+	padding:20px;
+	text-align:center;
+	overflow-x:auto;
+}
+.card_list {
+	box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 96%;
+	height: 35px;
+	border-radius: 15px;
+	color:#000000;
+	background:#ffffff;
+	margin-top:2px;
+	margin-bottom:2px;
+	font-weight: normal;
+	text-align:left;
+	cursor:pointer;
+	padding-top:6px;
+	padding-left:25px;
+}
+
+.card {
+	box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.1);
+	transition: 0.3s;
+	width: 90%;
+	height:140px;
+	margin-left:5%;
+	margin-top:-5%;
+	margin-right:5%;
+	border-radius: 0px;
+	float: left;
+	background: #ffffff;
+	font-size:12px;
+	cursor:pointer;
+}
+.card1 {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 30%;
+	border-radius: 15px;
+	float: left;
+	color:#000000;
+	height:auto;
+	background:#ffffff;
+	margin-bottom:15px;
+	margin-top:15px;
+	font-weight: bold;
+	padding:20px;
+	text-align:center;
+	cursor:pointer;
+}
+.latar_popup{
+	position: fixed;
+	z-index: 3;
+	background:#801B1B1C;
+	width:100%;
+	height:100%;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+}
+.latar_popup #popups{
+	position: fixed;
+	z-index: 3;
+	background:white;
+	text-align:center;
+	width:auto;
+	height:auto;
+	color:#887860;
+	padding: 10px;
+	align-content: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	font-size:14px;
+	margin-top:80px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+.latar_popup #popups #exit_popup{
+	position: fixed;
+	z-index: 4;
+	right: 0%;
+	top: 0%;
+	float:right;
+	width:30px;
+	background:red;
+	padding:5px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+.latar_popup #popups #label{
+	margin-top:15px;
+	background:#ffffff;
+	color:black;
+	width:80%;
+	margin-left:10%;
+	text-align:left;
+	float:left;
+}
+.latar_popup #popups #username{
+	margin-top:15px;
+	background:#ffffff;
+	color:black;
+	box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+	padding:5px;
+	width:80%;
+	margin-top:-10%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:10px;
+}
+.latar_popup #popups #password{
+	margin-top:15px;
+	background:#ffffff;
+	color:black;
+	box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+	padding:5px;
+	width:80%;
+	margin-top:-10%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:10px;
+}
+.latar_popup #popups #button{
+	margin-top:15px;
+	background:#887860;
+	color:white;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 15px;
+	padding:5px;
+	width:80%;
+	margin-top:-10%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:10px;
+}
